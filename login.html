@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+
+        img {
+            margin-top: 30px;
+            border-radius: 10px;
+        }
+
+        form {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <img src="{{ url_for('static', filename='IMG_9266.JPG') }}" alt="Logo" width="300">
+
+    <h1>Login</h1>
+    <form method="post" action="/login">
+        <input type="text" name="username" placeholder="Brugernavn"><br><br>
+        <input type="password" name="password" placeholder="Adgangskode"><br><br>
+        <button type="submit">Log ind</button>
+    </form>
+
+</body>
+</html>
+
+
+

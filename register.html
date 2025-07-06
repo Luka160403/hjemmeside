@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registrer</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <h2>Opret ny bruger</h2>
+    <form method="POST" action="{{ url_for('register') }}">
+        <input type="text" name="username" placeholder="Brugernavn" required>
+        <input type="password" name="password" placeholder="Adgangskode" required>
+        <input type="submit" value="Registrer">
+    </form>
+    <p>Har du allerede en konto? <a href="{{ url_for('login') }}">Log ind</a></p>
+</body>
+</html>
